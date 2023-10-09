@@ -19,9 +19,9 @@ namespace Zero {
 
       var carreiras = new List<Career>();
       var carreira = new Career("Especialista .NET", "especialista-dotnet");
-      var carreiraItem = new CareerItem(1,"POO","",null);
-      var carreiraItem2 = new CareerItem(2,"Aprenda dotnet","",null);
-      var carreiraItem3 = new CareerItem(3,".NET","",null);
+      var carreiraItem = new CareerItem(1,"POO","",coursePOO);
+      var carreiraItem2 = new CareerItem(2,"Aprenda csharp","",courseCsharp);
+      var carreiraItem3 = new CareerItem(3,".NET","",courseAspNet);
 
       carreira.Items.Add(carreiraItem);
       carreira.Items.Add(carreiraItem2);
@@ -33,8 +33,10 @@ namespace Zero {
         Console.WriteLine(c.Title);
           foreach(var el in c.Items.OrderByDescending(x => x.Order)){
             Console.WriteLine($"{el.Order} - {el.Title}");
+            Console.WriteLine(el.Course.Title);
           }
       }
+
 
       // foreach(var a in articles){
       //   Console.WriteLine(a.Id);
