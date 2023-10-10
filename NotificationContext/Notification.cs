@@ -1,3 +1,5 @@
+using Zero.ContentContext;
+
 namespace Zero.NotificationContext{
   public sealed class Notification{
 
@@ -11,7 +13,7 @@ namespace Zero.NotificationContext{
         Message = message;
     }
 
-        public string Property { get; set; }
+    public string Property { get; set; }
     public string Message { get; set; }
   }
 }
