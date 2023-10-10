@@ -1,5 +1,6 @@
 namespace Zero.ContentContext {
-      public class Module : Base {
+      public class Module : SharedContext.Base
+    {
 
         public Module()
         {

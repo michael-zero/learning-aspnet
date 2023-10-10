@@ -1,5 +1,6 @@
 namespace Zero.ContentContext {
-    public abstract class Content : Base {
+    public abstract class Content : SharedContext.Base
+    {
         public Content(string title, string url)
         {
             Title = title; 

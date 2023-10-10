@@ -1,7 +1,8 @@
 using Zero.ContentContext.Enums;
 
 namespace Zero.ContentContext {
-      public class Lecture : Base {
+      public class Lecture : SharedContext.Base
+    {
         public int Ordem { get; set; }
         public string Title { get; set; }
 

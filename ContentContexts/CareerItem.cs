@@ -1,7 +1,8 @@
 using Zero.NotificationContext;
 
 namespace Zero.ContentContext{
-      public class CareerItem : Base {
+      public class CareerItem : SharedContext.Base
+    {
 
         public int Order {get; set;}
         public string Title { get; set; }
